@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "attack_anime_fix",
+  "version": "${version}",
+  "name": "Survival Updated (wip)",
+  "description": "Mechanism-focused survival updates. Docs: docs/survival_updated/",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/attack_anime_fix/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.example.attack_anime_fix.client.Attack_anime_fixDataGenerator"
+    ],
+    "client": [
+      "com.example.attack_anime_fix.client.Attack_anime_fixClient"
+    ],
+    "main": [
+      "com.example.attack_anime_fix.Attack_anime_fix"
+    ]
+  },
+  "mixins": [
+    "attack_anime_fix.mixins.json",
+    {
+      "config": "attack_anime_fix.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

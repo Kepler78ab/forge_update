@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "##",
+    "#X",
+    " X"
+  ],
+  "key": {"#":"attack_anime_fix:steel_ingot","X":"minecraft:stick"},
+  "result": {
+    "id": "attack_anime_fix:steel_axe",
+    "count": 1
+  }
+}

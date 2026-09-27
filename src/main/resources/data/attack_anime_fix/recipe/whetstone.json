@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "S",
+    "P"
+  ],
+  "key": {
+    "S": "minecraft:stone",
+    "P": "#minecraft:planks"
+  },
+  "result": {
+    "id": "attack_anime_fix:whetstone",
+    "count": 1
+  }
+}

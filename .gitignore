@@ -1,0 +1,43 @@
+# Gradle
+.gradle/
+build/
+out/
+**/build/
+
+# Loom / Minecraft local run
+run/
+runs/
+remappedSrc/
+.loom/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse / VS Code
+.classpath
+.project
+.settings/
+bin/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs & crashes
+*.log
+logs/
+crash-reports/
+
+# Local env / secrets
+.env
+.env.*
+*.local
+
+# JVM dumps
+hs_err_pid*
+replay_pid*
