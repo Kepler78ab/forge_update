@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "tool_sharpness:block/whetstone" }
+  }
+}

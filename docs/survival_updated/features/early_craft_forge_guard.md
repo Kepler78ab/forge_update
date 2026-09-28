@@ -143,21 +143,23 @@ baseDamage
 
 ---
 
-### C. 锻造模板与金属件（Forge Pipeline）— 核心成长链
+### C. 锻造模板与金属件（Forge Pipeline）— 核心成长链（初版已进代码）
+
+> 初版取舍：剑/斧各 1 模板；族 WOOD / NETHERRACK；金属铜铁钢；钢工具快捷合成暂保留。
 
 这是最长的组合链，拆成**不可跳步**的工序：
 
 ```
-[5×5 模板台] 用同质材料排模板
-        ↓ 得到 ForgeTemplateItem（一次性，含 shape + materialFamily）
+[原版工作台 3×3] 用同质材料排模板（shaped 配方）
+        ↓ 得到 ForgeTemplateItem（一次性，含 profile + materialFamily）
 [高炉 + 模板槽 + 金属输入]
         ↓ 仅生成「燃烧中的 X 金属 · Y 质地件」BurningPiece
         （无模板 → 只能出普通锭，不能出武器件）
-[投入水中冷却]
-        ↓ CooledPiece
-[工作台分解]
+[右键水源/水锅冷却]
+        ↓ CooledPiece（铜/铁/钢分色）
+[右键工作台 → 零件]
         ↓ MetalPart（刃 / 斧头 / …）
-[木棍 + MetalPart] → RawWeapon（未打磨）
+[工作台：零件 + 木棍] → RawWeapon（未打磨）
 [磨刀石] → 可用武器
 ```
 
@@ -197,6 +199,20 @@ baseDamage
 **双手/单手跟模板绑定，不跟重量绑定。**  
 双手：不可进副手；主手持双手时副手逻辑关闭。
 
+#### C2.1 模板物品图标（美术）— **方案 B（0.0.2）**
+
+机制上模板随 **材料族 × 武器类型** 组合；图标要能看出模板身份 + 武器类型，并尽量暗示材料族。
+
+| 阶段 | 约定 |
+|---|---|
+| **0.0.2 采用** | **方案 B**：武器底图 × 武器种数 + 族叠加层 × 族数；`layer0`+`layer1` |
+| **底图制作** | **整器含柄**（不去柄）：`steel_*` 经 CLI `stamp` 叠到羊皮纸；长剑可略加长刃尖。用 `tools_py/pixel_drawer` |
+| **当前规模** | 档案 6：`sword_basic` / `sword_long` / `axe_basic` / `pickaxe_basic` / `shovel_basic` / `hoe_basic`；族 2 → **6 底 + 2 叠加 = 12 观感**；均有 5×5 图案与 `forged_*` 产物 |
+| **暂不加** | `sword_short`；长柄/短柄斧 → **0.0.4** |
+| **0.0.3** | 方块世界模型 + 护甲外观（见 `update_docs/0.0.3/DESIGN.md`） |
+
+实现：`items/forge_template.json` 用 `select`（`custom_model_data` 字符串 `{profile}_{family}`）；`ForgeService.createTemplateStack` 写入对应键。台账：`docs/update_docs/0.0.2/`。
+
 #### C3 重量与攻速
 
 - 锻造时投入的锭/矿「等效原版锭数」= `metalUnits`  
@@ -204,10 +220,11 @@ baseDamage
 - **外观**由模板决定；**攻速**由 `metalUnits` 曲线决定（同模板，金属越多越慢）  
 - 大剑模板 + 少量金属 → 长得像大剑，打得像轻剑（你提的需求）
 
-#### C4 5×5 模板台
+#### C4 原版 3×3 模板配方
 
-- 新方块 `TemplateBenchBlock`（UI 5×5）  
-- 合成结果校验：图案匹配某 `WeaponTemplateProfile` + 材料同族  
+- 每种 `WeaponProfileId × TemplateFamily` 一张 `crafting_shaped` 数据包配方  
+- 结果写入 `forge_template` 组件 + `custom_model_data`（多图标）  
+- 自定义模板台方块已移除（见 `update_docs/0.0.5`）  
 
 #### C5 高炉扩展槽
 
@@ -284,9 +301,7 @@ com.example...survival          // 或未来 survival_updated
 │   ├── FireStarterItem
 │   └── FurnaceIgnitionMixin / BlastFuelMixin
 ├── forge/
-│   ├── TemplateBenchBlock
-│   ├── ForgeTemplateItem
-│   ├── BurningPieceItem / CooledPieceItem / MetalPartItem
+│   ├── ForgeTemplateData / ForgePiece*
 │   ├── ForgeService
 │   └── BlastFurnaceForgeMixin
 ├── tool/
@@ -339,7 +354,7 @@ data/survival_updated/
 | 6 | 钻石已有世界如何处理？ | 仅禁合成；已有钻石工具保留 |
 | 7 | 完美格挡是否无敌帧共享受伤冷却？ | 完美成功重置短 i-frame，防连段 |
 | 8 | 模组 id / 包名是否立刻改 `survival_updated`？ | 文档已用此名；代码可随第一期实现一并改 |
-| 9 | 5×5 是否新方块还是扩展工作台？ | **新方块**模板台，避免打架原版 3×3 |
+| 9 | 模板排版？ | **原版 3×3 shaped**（0.0.5）；曾用 5×5 模板台已移除 |
 | 10 | 一期是否包含护甲三档数值？ | 组件先挂上，数值二期 |
 
 ---
@@ -357,11 +372,11 @@ data/survival_updated/
 4. 木/石工具补丁、钻石禁合成、钢/装饰工具  
 5. 磨刀石 + 锐利度组件 + 锋利附魔折算  
 
-### 三期 — Forge Pipeline
+### 三期 — Forge Pipeline（初版已进代码）
 
-6. 5×5 模板台、模板物品、高炉模板槽  
+6. 3×3 模板配方、模板物品、高炉模板槽  
 7. 燃烧件→冷却→零件→装柄→打磨全流程  
-8. 重量→攻速曲线；双手标记  
+8. 重量→攻速曲线；双手标记（数据已挂，行为属四期）  
 
 ### 四期 — Armor & Guard
 

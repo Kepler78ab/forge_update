@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": ["###"," X "," X "],
+  "key": {"#": "minecraft:obsidian", "X": "minecraft:stick"},
+  "result": {"id": "weapon_expansion:obsidian_pickaxe", "count": 1}
+}

@@ -1,14 +1,30 @@
 # Gradle
 .gradle/
 build/
-out/
 **/build/
+out/
+**/out/
+bin/
+**/bin/
 
-# Loom / Minecraft local run
+# Loom / Minecraft local run & remap
 run/
 runs/
+**/run/
+**/runs/
 remappedSrc/
 .loom/
+.okhttp/
+
+# Fabric / Loom caches & remap artifacts
+*.remap
+*.intermediary
+
+# Built jars (keep sources; ignore local artifacts)
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+libs/
+**/libs/
 
 # IntelliJ IDEA
 .idea/
@@ -16,12 +32,12 @@ remappedSrc/
 *.ipr
 *.iws
 
-# Eclipse / VS Code
+# Eclipse / VS Code / Cursor local
 .classpath
 .project
 .settings/
-bin/
 .vscode/
+*.code-workspace
 
 # OS
 .DS_Store
@@ -31,13 +47,57 @@ Desktop.ini
 # Logs & crashes
 *.log
 logs/
+**/logs/
 crash-reports/
+**/crash-reports/
 
 # Local env / secrets
 .env
 .env.*
+!.env.example
 *.local
 
 # JVM dumps
 hs_err_pid*
 replay_pid*
+
+# Python — virtualenvs
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+# Python — bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Python — packaging / PyInstaller outputs
+dist/
+**/dist/
+*.egg
+*.whl
+*.manifest
+*.spec
+
+# Python — local tooling config (keep lockfiles tracked if present)
+.pdm-python
+.conda/
+*.conda
+.ipynb_checkpoints/
+
+# Python — local tool output (pixel_drawer / model_builder)
+tools_py/**/out/
+tools_py/**/*.spec

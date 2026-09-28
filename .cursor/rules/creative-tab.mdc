@@ -1,0 +1,15 @@
+---
+description: 新物品必须加入模组创造栏 ModItemGroups
+alwaysApply: true
+---
+
+# 创造栏登记规则
+
+新增任何可获得的 `Item` / `BlockItem`（含锻造模板变体、盔甲、盾等）时：
+
+1. 在 `ModItemGroups.register()` 的 `entries` 里 **同步添加**，否则创造模式找不到。
+2. 若物品靠组件区分外观（如 `createTemplateStack(profile, family)`），创造栏应添加 **每个有意义的变体**，不要只加空默认物品。
+3. 复用原版物品作模组机制载体时（如重盾 = `Items.SHIELD`），也要在模组 Tab 里 `entries.add(...)`，方便测试。
+4. 改完后勾选/更新当前 `docs/update_docs/<batch>/TASKS.md` 中的创造栏相关项。
+
+反例：只 `Registry.register` 物品却不改 `ModItemGroups`。

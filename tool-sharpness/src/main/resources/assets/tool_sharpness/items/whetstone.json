@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "tool_sharpness:item/whetstone"
+  }
+}

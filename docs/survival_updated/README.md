@@ -6,22 +6,30 @@
 ## 目录约定
 
 ```
+docs/
+├── survival_updated/   ← 长期设计：路线图、CHANGELOG、features
+└── update_docs/        ← 按批次 + 按包的更新台账（追溯用）
+```
+
+```
 docs/survival_updated/
 ├── README.md           ← 本文件：总览与约定
 ├── VERSIONS.md         ← 版本号规则 + 当前目标版本
 ├── CHANGELOG.md        ← 按版本记录的变更日志
 ├── roadmap.md          ← 机制点子 / 路线图
 └── features/           ← 各机制的设计文档（按主题拆分）
-    └── .gitkeep
 ```
+
+`update_docs` 约定见：[`../update_docs/README.md`](../update_docs/README.md) · 索引 [`../update_docs/INDEX.md`](../update_docs/INDEX.md)
 
 ## 工作流
 
 1. **先写文档，再写代码**：新机制先在 `features/` 或 `roadmap.md` 立项，确认后再实现。
-2. **版本只在本目录维护**：发版时同时改 `VERSIONS.md` 与 `CHANGELOG.md`，并与 `gradle.properties` 的 `mod_version` 对齐。
-3. **不回写废弃方案**：已放弃的攻击动画模组不再维护；历史若需备忘可写在 `CHANGELOG.md` 的 Abandoned 段。
+2. **版本只在本目录维护发版信息**：发版时同时改 `VERSIONS.md` 与 `CHANGELOG.md`，并与 `gradle.properties` 的 `mod_version` 对齐。
+3. **批次追溯**：`docs/update_docs/<batch>/TASKS.md` + 可选 `packages/` 文档说明；实现与长期设计仍改原位置。
+4. **不回写废弃方案**：已放弃的攻击动画模组不再维护；历史若需备忘可写在 `CHANGELOG.md` 的 Abandoned 段。
 
 ## 当前代码状态
 
-工程已清空攻击相关实现，仅保留可启动的 Fabric 空壳。  
+Survival Updated 一～四期初版 + 物品贴图初版已进仓库（详见 `update_docs/0.0.1`）。  
 模组 Gradle / Java 包名仍为仓库原名，后续若整体重命名为 `survival_updated` 再单独改。

@@ -1,0 +1,11 @@
+---
+description: 用 docs/update_docs 做批次追溯；实现仍改原位置；packages 为文档说明
+alwaysApply: true
+---
+
+# update_docs 追溯规则
+
+- `docs/update_docs/<batch>/`：`README` + `TASKS`；需要时用 `packages/*.md` **按包写文档说明**（不是代码目录）。
+- 实现改 `src/` / resources；长期设计改 `docs/survival_updated/`。
+- 有实质更新时勾选当前 `open` 批次 `TASKS.md`，并更新对应 `packages/`；新主题开下一版本并更新 `INDEX.md`。
+- 批次号可与 `mod_version` 不同；批次 README 注明对应 `mod_version`。

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/grindstone",
+  "textures": {
+    "round": "tool_sharpness:block/whetstone_round",
+    "particle": "tool_sharpness:block/whetstone_round"
+  }
+}

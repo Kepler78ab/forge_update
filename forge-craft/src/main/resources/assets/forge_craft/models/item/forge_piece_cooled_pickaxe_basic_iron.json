@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "forge_craft:item/forge_piece_cooled_pickaxe_basic_iron"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "#",
+    "#",
+    "X"
+  ],
+  "key": {
+    "#": "minecraft:lapis_block",
+    "X": "minecraft:stick"
+  },
+  "result": {
+    "id": "weapon_expansion:lapis_sword",
+    "count": 1
+  }
+}

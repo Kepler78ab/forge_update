@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "weapon_expansion:steel_sword",
+    "weapon_expansion:obsidian_sword",
+    "weapon_expansion:emerald_sword",
+    "weapon_expansion:redstone_sword",
+    "weapon_expansion:lapis_sword"
+  ]
+}

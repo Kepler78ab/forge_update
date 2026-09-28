@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "forge_craft:forge_template_axe_basic",
+  "pattern": [
+    "FF",
+    "FX",
+    " X"
+  ],
+  "key": {
+    "F": "#forge_craft:template_family_netherrack",
+    "X": "minecraft:stick"
+  },
+  "result": {
+    "id": "forge_craft:forge_template",
+    "count": 1,
+    "components": {
+      "forge_craft:forge_template": {
+        "profile": "axe_basic",
+        "family": "netherrack"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["axe_basic_netherrack"]
+      }
+    }
+  }
+}

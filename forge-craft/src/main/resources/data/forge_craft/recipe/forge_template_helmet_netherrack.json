@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "forge_craft:forge_template_helmet",
+  "pattern": [
+    "FFF",
+    "F F"
+  ],
+  "key": {
+    "F": "#forge_craft:template_family_netherrack"
+  },
+  "result": {
+    "id": "forge_craft:forge_template",
+    "count": 1,
+    "components": {
+      "forge_craft:forge_template": {
+        "profile": "helmet",
+        "family": "netherrack"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["helmet_netherrack"]
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "item.tool_sharpness.whetstone": "Whetstone",
+  "item.tool_sharpness.sharpness": "Sharpness: %s / %s",
+  "block.tool_sharpness.whetstone": "Whetstone",
+  "itemGroup.tool_sharpness.main": "Tool Sharpness"
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "forge_craft:forge_template_pickaxe_basic",
+  "pattern": [
+    "FFF",
+    " X ",
+    " X "
+  ],
+  "key": {
+    "F": "#forge_craft:template_family_stone",
+    "X": "minecraft:stick"
+  },
+  "result": {
+    "id": "forge_craft:forge_template",
+    "count": 1,
+    "components": {
+      "forge_craft:forge_template": {
+        "profile": "pickaxe_basic",
+        "family": "stone"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["pickaxe_basic_stone"]
+      }
+    }
+  }
+}

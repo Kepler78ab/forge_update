@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "EIE",
+    "SSS",
+    "SSS"
+  ],
+  "key": {
+    "E": "minecraft:ender_pearl",
+    "I": "minecraft:item_frame",
+    "S": "minecraft:stone"
+  },
+  "result": {
+    "id": "forge_craft:template_bench",
+    "count": 1
+  }
+}

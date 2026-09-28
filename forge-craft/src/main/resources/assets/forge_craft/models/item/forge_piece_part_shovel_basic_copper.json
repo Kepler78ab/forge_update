@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "forge_craft:item/forge_piece_part_shovel_basic_copper"
+  }
+}

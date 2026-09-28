@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "forge_craft:forge_template_chestplate",
+  "pattern": [
+    "F F",
+    "FFF",
+    "FFF"
+  ],
+  "key": {
+    "F": "#forge_craft:template_family_brick"
+  },
+  "result": {
+    "id": "forge_craft:forge_template",
+    "count": 1,
+    "components": {
+      "forge_craft:forge_template": {
+        "profile": "chestplate",
+        "family": "brick"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["chestplate_brick"]
+      }
+    }
+  }
+}

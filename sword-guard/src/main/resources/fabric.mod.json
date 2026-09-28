@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "sword_guard",
+  "version": "${version}",
+  "name": "Sword Guard",
+  "description": "Sword blocking, dual-wield, and two-hand bow rules. Independent of forge.",
+  "authors": [],
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.swordguard.SwordGuardMod"
+    ]
+  },
+  "mixins": [
+    "sword_guard.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

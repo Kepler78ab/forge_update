@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "forge_craft",
+  "version": "${version}",
+  "name": "Forge Craft",
+  "description": "Smelting blast furnace, stone hopper, template bench, molten metal casting.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/forge_craft/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.example.forgecraft.client.ForgeCraftDataGenerator"
+    ],
+    "client": [
+      "com.example.forgecraft.client.ForgeCraftClient"
+    ],
+    "main": [
+      "com.example.forgecraft.ForgeCraftMod"
+    ]
+  },
+  "mixins": [
+    "forge_craft.mixins.json",
+    {
+      "config": "forge_craft.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

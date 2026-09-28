@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "forge_craft:item/emerald_sword"
+  }
+}

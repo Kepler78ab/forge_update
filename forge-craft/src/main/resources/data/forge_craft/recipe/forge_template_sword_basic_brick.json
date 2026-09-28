@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "forge_craft:forge_template_sword_basic",
+  "pattern": [
+    "F",
+    "F",
+    "X"
+  ],
+  "key": {
+    "F": "#forge_craft:template_family_brick",
+    "X": "minecraft:stick"
+  },
+  "result": {
+    "id": "forge_craft:forge_template",
+    "count": 1,
+    "components": {
+      "forge_craft:forge_template": {
+        "profile": "sword_basic",
+        "family": "brick"
+      },
+      "minecraft:custom_model_data": {
+        "strings": ["sword_basic_brick"]
+      }
+    }
+  }
+}

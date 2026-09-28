@@ -1,0 +1,6 @@
+{
+  "item.tool_sharpness.whetstone": "磨刀石",
+  "item.tool_sharpness.sharpness": "锐利度：%s / %s",
+  "block.tool_sharpness.whetstone": "磨刀石",
+  "itemGroup.tool_sharpness.main": "工具锋利"
+}

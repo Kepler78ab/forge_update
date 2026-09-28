@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "weapon_expansion",
+  "version": "${version}",
+  "name": "Weapon Expansion",
+  "description": "Emerald / redstone / lapis / steel / obsidian tools. Steel durability ×3/4, obsidian ×4/5 (forge theme compat).",
+  "authors": [],
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.weaponexpansion.WeaponExpansionMod"
+    ],
+    "client": [
+      "com.example.weaponexpansion.client.WeaponExpansionClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

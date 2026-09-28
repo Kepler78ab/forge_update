@@ -1,9 +1,17 @@
 pluginManagement {
-    repositories {
-        maven {
-            name = 'Fabric'
-            url = 'https://maven.fabricmc.net/'
-        }
-        gradlePluginPortal()
-    }
+	repositories {
+		maven {
+			name = 'Fabric'
+			url = 'https://maven.fabricmc.net/'
+		}
+		gradlePluginPortal()
+	}
 }
+
+rootProject.name = 'survival-updated'
+
+include 'forge-craft'
+include 'weapon-expansion'
+include 'sword-guard'
+include 'tool-pressure'
+include 'tool-sharpness'

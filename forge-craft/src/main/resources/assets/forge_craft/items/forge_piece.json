@@ -1,0 +1,307 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:custom_model_data",
+    "index": 0,
+    "cases": [
+      {
+        "when": "burning_sword_basic",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_burning_sword_basic"
+        }
+      },
+      {
+        "when": "burning_sword_long",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_burning_sword_long"
+        }
+      },
+      {
+        "when": "burning_axe_basic",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_burning_axe_basic"
+        }
+      },
+      {
+        "when": "burning_pickaxe_basic",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_burning_pickaxe_basic"
+        }
+      },
+      {
+        "when": "burning_shovel_basic",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_burning_shovel_basic"
+        }
+      },
+      {
+        "when": "burning_hoe_basic",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_burning_hoe_basic"
+        }
+      },
+      {
+        "when": "cooled_sword_basic_copper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_sword_basic_copper"
+        }
+      },
+      {
+        "when": "cooled_sword_basic_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_sword_basic_iron"
+        }
+      },
+      {
+        "when": "cooled_sword_basic_steel",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_sword_basic_steel"
+        }
+      },
+      {
+        "when": "cooled_sword_long_copper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_sword_long_copper"
+        }
+      },
+      {
+        "when": "cooled_sword_long_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_sword_long_iron"
+        }
+      },
+      {
+        "when": "cooled_sword_long_steel",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_sword_long_steel"
+        }
+      },
+      {
+        "when": "cooled_axe_basic_copper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_axe_basic_copper"
+        }
+      },
+      {
+        "when": "cooled_axe_basic_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_axe_basic_iron"
+        }
+      },
+      {
+        "when": "cooled_axe_basic_steel",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_axe_basic_steel"
+        }
+      },
+      {
+        "when": "cooled_pickaxe_basic_copper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_pickaxe_basic_copper"
+        }
+      },
+      {
+        "when": "cooled_pickaxe_basic_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_pickaxe_basic_iron"
+        }
+      },
+      {
+        "when": "cooled_pickaxe_basic_steel",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_pickaxe_basic_steel"
+        }
+      },
+      {
+        "when": "cooled_shovel_basic_copper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_shovel_basic_copper"
+        }
+      },
+      {
+        "when": "cooled_shovel_basic_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_shovel_basic_iron"
+        }
+      },
+      {
+        "when": "cooled_shovel_basic_steel",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_shovel_basic_steel"
+        }
+      },
+      {
+        "when": "cooled_hoe_basic_copper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_hoe_basic_copper"
+        }
+      },
+      {
+        "when": "cooled_hoe_basic_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_hoe_basic_iron"
+        }
+      },
+      {
+        "when": "cooled_hoe_basic_steel",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_cooled_hoe_basic_steel"
+        }
+      },
+      {
+        "when": "part_sword_basic_copper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_sword_basic_copper"
+        }
+      },
+      {
+        "when": "part_sword_basic_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_sword_basic_iron"
+        }
+      },
+      {
+        "when": "part_sword_basic_steel",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_sword_basic_steel"
+        }
+      },
+      {
+        "when": "part_sword_long_copper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_sword_long_copper"
+        }
+      },
+      {
+        "when": "part_sword_long_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_sword_long_iron"
+        }
+      },
+      {
+        "when": "part_sword_long_steel",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_sword_long_steel"
+        }
+      },
+      {
+        "when": "part_axe_basic_copper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_axe_basic_copper"
+        }
+      },
+      {
+        "when": "part_axe_basic_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_axe_basic_iron"
+        }
+      },
+      {
+        "when": "part_axe_basic_steel",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_axe_basic_steel"
+        }
+      },
+      {
+        "when": "part_pickaxe_basic_copper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_pickaxe_basic_copper"
+        }
+      },
+      {
+        "when": "part_pickaxe_basic_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_pickaxe_basic_iron"
+        }
+      },
+      {
+        "when": "part_pickaxe_basic_steel",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_pickaxe_basic_steel"
+        }
+      },
+      {
+        "when": "part_shovel_basic_copper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_shovel_basic_copper"
+        }
+      },
+      {
+        "when": "part_shovel_basic_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_shovel_basic_iron"
+        }
+      },
+      {
+        "when": "part_shovel_basic_steel",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_shovel_basic_steel"
+        }
+      },
+      {
+        "when": "part_hoe_basic_copper",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_hoe_basic_copper"
+        }
+      },
+      {
+        "when": "part_hoe_basic_iron",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_hoe_basic_iron"
+        }
+      },
+      {
+        "when": "part_hoe_basic_steel",
+        "model": {
+          "type": "minecraft:model",
+          "model": "forge_craft:item/forge_piece_part_hoe_basic_steel"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "forge_craft:item/forge_piece"
+    }
+  }
+}

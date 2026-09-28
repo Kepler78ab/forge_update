@@ -1,0 +1,11 @@
+{
+  "size": "16x16",
+  "ops": [
+    {"op": "fill", "color": "#00000000"},
+    {"op": "rect", "x": 4, "y": 2, "w": 8, "h": 8, "color": "#8C8C8CFF"},
+    {"op": "rect", "x": 5, "y": 3, "w": 6, "h": 6, "color": "#C6C6C6FF"},
+    {"op": "set", "x": 6, "y": 4, "color": "#E8E8E8FF"},
+    {"op": "line", "x0": 6, "y0": 10, "x1": 9, "y1": 10, "color": "#4A4A4AFF"},
+    {"op": "replace", "from": "#8C8C8CFF", "to": "#6E6E6EFF"}
+  ]
+}

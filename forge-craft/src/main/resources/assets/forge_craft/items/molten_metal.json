@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "forge_craft:item/molten_metal",
+    "tints": [
+      {
+        "type": "minecraft:dye",
+        "default": -8355712
+      }
+    ]
+  }
+}

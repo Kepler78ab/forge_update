@@ -1,0 +1,7 @@
+{
+  "id": "lapis",
+  "color": [30, 60, 180],
+  "hardness": 4,
+  "weight": 1.2,
+  "category": "gem"
+}
